@@ -64,7 +64,7 @@ publishBtn.addEventListener('click', () => {
                 title: blogTitleField.value,
                 article: articleField.value,
                 bannerImage: bannerPath,
-                publishedAt: '${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}';
+                publishedAt: '${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}'
             })
             .then(() => {
                 location.href = '/${docName}';
