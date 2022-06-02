@@ -4,14 +4,15 @@
     position: relative;
     background: #e7e7e7;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
+    border-radius: 10px;
 }
 
 .banner-upload-btn {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    width: 40px;
+    width: 60px;
     height: 40px;
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.1);
@@ -63,7 +64,8 @@ text::-webkit-scrollbar-thumb {
     font-size: 20px;
     margin-top: 20px;
     font-weight: 500;
-    padding-bottom: 100px white-space: pre-wrap;
+    padding-bottom: 100px;
+    white-space: pre-wrap;
 }
 
 .blog-options {

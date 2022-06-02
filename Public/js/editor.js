@@ -1,6 +1,5 @@
 const blogTitleField = document.querySelector('.title');
 const articleField = document.querySelector('.article');
-
 //banner
 const bannerImage = document.querySelector('#banner-upload');
 const banner = document.querySelector('.banner');
@@ -11,11 +10,9 @@ const uploading = document.querySelector('#image-upload');
 bannerImage.addEventListener('change', () => {
     uploadImage(bannerImage, "banner");
 });
-
-uploadInput.addEventListener('change', () => {
+uploading.addEventListener('change', () => {
     uploadImage(uploadInput, "image");
 })
-
 const uploadImage = (uploadFile, uploadType) => {
     const [file] = uploadFile.files;
     if (file && file.type.includes("image")) {

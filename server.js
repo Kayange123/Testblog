@@ -11,16 +11,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/editor', (req, res) => {
-        res.sendFile(path.join(initial_path, "editor.html"));
-    })
-    //  upload link
+    res.sendFile(path.join(initial_path, "editor.html"));
+});
+//  upload link
 app.post('/', () => {
     let file = req.files.image;
     let date = new Date();
     //image name
     let imagename = date.getDate() + date.getTime() + file.name;
     // image upload path
-    let path = 'Public/upload' + imagename;
+    let path = 'Public/uploads' + imagename;
 
     //create upload
     file.mv(path, (err, result) => {
